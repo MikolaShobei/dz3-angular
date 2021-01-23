@@ -1,0 +1,17 @@
+
+
+<ul>
+  <li>producer:   {{car.producer}}</li>
+  <li>power:   {{car.power}}</li>
+  <li>year:   {{car.year}}</li>
+  <li>price:   {{car.price}}</li>
+  <li>owner:
+    <ul>
+      <li>name: {{car.owner.name}}</li>
+      <li>age: {{car.owner.age}}</li>
+      <li>experience: {{car.owner.experience}}</li>
+    </ul>
+  </li>
+  <a href="#" [routerLink]="[car.id]" (click)="onHandleClick(car.id)">show id</a>
+</ul>
+

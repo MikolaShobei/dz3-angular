@@ -1,0 +1,9 @@
+
+
+
+<div *ngFor="let car of cars" class="car">
+  <app-car [car]="car" (liftIdUp)="getId($event)"> </app-car>
+  <div *ngIf="id == car.id" class="route">
+    <router-outlet> </router-outlet>
+  </div>
+</div>
